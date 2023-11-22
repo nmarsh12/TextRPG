@@ -1,0 +1,20 @@
+check console window size with WindowWidth() and WindowHeight()
+split console between a constant hud part and a changing game screen 
+some kind of low framerate constant gameloop, test with different framerates
+
+
+timer logic:
+loop every 1/framerate seconds
+do this by comparing current time to time of last check or use timers
+
+if currentTime > lastTime + deltaTime:
+	do one game loop
+
+all moving parts should use deltatime to stay independent of framerate
+
+input logic:
+create list of inputs which call a function and get removed from list every frame
+use read() if it has held input support
+
+
+program structure:
